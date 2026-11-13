@@ -115,6 +115,8 @@ em { font-style: normal; }
   z-index: 40;
 }
 .pager span { color: var(--navy); font-weight: 700; }
+body.is-dark .pager { color: #8fa5af; }
+body.is-dark .pager span { color: #fff; }
 
 /* ---------- 頁面骨架 ---------- */
 
@@ -177,14 +179,15 @@ em { font-style: normal; }
   position: absolute;
   right: -10%;
   bottom: -30%;
-  width: 55vmax;
-  height: 55vmax;
+  width: 78vmax;
+  height: 78vmax;
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, rgba(46, 125, 143, 0.35), transparent 62%);
   pointer-events: none;
 }
 .page--cover .kicker { color: #dfb496; }
 .page--cover .display {
+  margin-top: 1.3rem;
   font-size: var(--step-3);
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -236,6 +239,7 @@ em { font-style: normal; }
   color: #8fa5af;
   letter-spacing: 0.05em;
 }
+.hint__key svg { width: 13px; height: 13px; display: block; }
 .hint__key {
   display: inline-grid;
   place-items: center;

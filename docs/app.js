@@ -25,6 +25,8 @@
       else d.removeAttribute("aria-current");
     });
     if (pagerNow) pagerNow.textContent = String(index + 1);
+    document.body.classList.toggle("is-dark", pages[index].classList.contains("page--cover") ||
+      pages[index].classList.contains("page--decide"));
   }
 
   function updateProgress() {
@@ -199,6 +201,19 @@
     cutEl.addEventListener("input", recalc);
     recalc();
   }
+
+  /* ---------- 深連結：?p=3 或 #p3 ---------- */
+
+  (function deepLink() {
+    var m = /[?&]p=(\d)/.exec(location.search);
+    var idx = m ? parseInt(m[1], 10) - 1 : -1;
+    if (idx >= 0 && idx < pages.length) {
+      window.setTimeout(function () {
+        pages[idx].scrollIntoView({ behavior: "auto", block: "start" });
+        setActive(idx);
+      }, 60);
+    }
+  })();
 
   /* ---------- 決策摘要複製 ---------- */
 
