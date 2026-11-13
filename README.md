@@ -1,7 +1,22 @@
-# 以小團隊取代大團隊｜BIM 導入決策（5 頁互動版）
+# 最高機密｜BIM 導入決策（5 頁互動版）
 
-給管理層看的 5 頁決策簡報，做成可直接放 GitHub Pages 的靜態網站。
-手機、平板、桌機都能看；沒有建置流程、沒有外部資源、離線也能開。
+**已上線：<https://stansu.github.io/bim-deck/>**
+
+給管理層看的 5 頁決策簡報，做成靜態網站。手機、平板、桌機都能看；
+沒有建置流程、沒有外部字型或追蹤碼，離線也能開。
+
+- 原始碼：<https://github.com/stansu/bim-deck>（公開；已加 `noindex` 與 `robots.txt`）
+- 發布來源：`main` 分支的 `/docs` 資料夾
+
+## 深連結
+
+| 用途 | 網址 |
+|---|---|
+| 第 2 頁（問題與目標） | `/?p=2` |
+| 第 3 頁，工具分工 | `/?p=3&t=tool` |
+| 第 3 頁，時程 | `/?p=3&t=plan` |
+| 第 4 頁（成本與試算） | `/?p=4` |
+| 第 5 頁（裁決） | `/?p=5` |
 
 ## 內容
 
@@ -26,38 +41,20 @@ python3 -m http.server 8000
 
 直接雙擊 `docs/index.html` 也可以，但用本機伺服器比較接近實際部署的樣子。
 
-## 部署到 GitHub Pages
-
-### 方式 A：從 `/docs` 發布（建議，最省事）
+## 之後怎麼更新
 
 ```bash
-git init
-git add docs
-git commit -m "add BIM decision deck"
-git branch -M main
-git remote add origin https://github.com/<你的帳號>/<repo>.git
-git push -u origin main
+# 改 docs/ 裡的檔案
+git add docs && git commit -m "update deck" && git push
 ```
 
-然後在 GitHub 倉庫 → **Settings → Pages**
-- Source: `Deploy from a branch`
-- Branch: `main`　資料夾: **`/docs`**
-- 按 Save，等 1–2 分鐘
+推上去後 GitHub Pages 會在 1 分鐘內自動重建（`main` / `/docs`）。
 
-網址會是：`https://<帳號>.github.io/<repo>/`
+## 改成別的網址或私有
 
-### 方式 B：發布整個倉庫根目錄
-
-把 `docs/` 裡的 `index.html`、`style.css`、`app.js`、`.nojekyll`
-複製到倉庫根目錄，Pages 設定選 `main` / `/ (root)`。
-
-> 注意：根目錄若放 `.docx`、`.xlsx`、`.pptx`，會一起被公開。
-> 不想公開就把簡報網站獨立成一個 repo。
-
-### 自訂網域
-
-在 `docs/` 放一個 `CNAME` 檔，內容寫你的網域（例如 `bim.example.com`），
-再到 DNS 設 CNAME 指向 `<帳號>.github.io`。
+- **換 repo 或帳號**：`git remote set-url origin <新網址>`，再到 Settings → Pages 重設來源。
+- **要改回私有**：免費方案的私人 repo 不支援 Pages，站台會下線；內容仍留在 repo 裡。
+- **自訂網域**：在 `docs/` 放 `CNAME`（例如 `bim.example.com`），再到 DNS 設 CNAME 指向 `stansu.github.io`。
 
 ## 檔案結構
 
