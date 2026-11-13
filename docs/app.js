@@ -208,10 +208,13 @@
     var m = /[?&]p=(\d)/.exec(location.search);
     var idx = m ? parseInt(m[1], 10) - 1 : -1;
     if (idx >= 0 && idx < pages.length) {
+      // 直接開啟深連結時不要等淡入，避免第一眼看到空白
+      document.documentElement.classList.add("no-anim");
+      pages.forEach(function (p) { p.classList.add("is-in"); });
       window.setTimeout(function () {
         pages[idx].scrollIntoView({ behavior: "auto", block: "start" });
         setActive(idx);
-      }, 60);
+      }, 30);
     }
   })();
 

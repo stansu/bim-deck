@@ -880,6 +880,12 @@ input[type="range"]:focus-visible { outline: 2px solid var(--teal); outline-offs
   .stats > div:last-child { grid-column: 1 / -1; }
 }
 
+.js.no-anim .page__inner > * {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .page__inner > * { opacity: 1; transform: none; transition: none; }
