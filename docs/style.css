@@ -124,7 +124,7 @@ body.is-dark .pager span { color: #fff; }
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: clamp(3.5rem, 8vh, 6rem) var(--pad);
   scroll-snap-align: start;
   scroll-margin-top: 0;
@@ -132,7 +132,7 @@ body.is-dark .pager span { color: #fff; }
 .page__inner {
   width: 100%;
   max-width: var(--maxw);
-  margin: 0 auto;
+  margin: auto;
 }
 
 
@@ -528,14 +528,21 @@ body.is-dark .pager span { color: #fff; }
   padding: clamp(1.1rem, 2.4vw, 1.6rem);
 }
 .slider { display: block; margin-bottom: 1.1rem; }
-.slider > span {
+.slider__head {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
   font-size: var(--step--1);
   color: var(--muted);
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
 }
-.slider b { color: var(--navy); font-variant-numeric: tabular-nums; }
+.slider__head b {
+  color: var(--navy);
+  font-size: 1.12em;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.15em;
+}
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -808,7 +815,7 @@ input[type="range"]:focus-visible { outline: 2px solid var(--teal); outline-offs
 }
 
 @media (max-width: 860px) {
-  .page { align-items: flex-start; padding-top: clamp(2.6rem, 7vh, 4rem); }
+  .page { padding-top: clamp(2.6rem, 7vh, 4rem); }
   .page__inner { padding-bottom: 4.5rem; }
 
   .flow { grid-template-columns: 1fr; }

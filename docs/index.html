@@ -173,14 +173,14 @@
 
         <div class="money__calc">
           <h3>自己拉一次</h3>
-          <label class="slider">
-            <span>年案量 <b id="v-cases">10</b> 件</span>
+          <div class="slider">
+            <div class="slider__head"><label for="cases">年案量</label><span><b id="v-cases">10</b> 件</span></div>
             <input type="range" id="cases" min="6" max="16" step="1" value="10">
-          </label>
-          <label class="slider">
-            <span>工時降幅 <b id="v-cut">25</b> %</span>
+          </div>
+          <div class="slider">
+            <div class="slider__head"><label for="cut">工時降幅</label><span><b id="v-cut">25</b> %</span></div>
             <input type="range" id="cut" min="10" max="40" step="5" value="25">
-          </label>
+          </div>
           <div class="calc-out">
             <div><span>年效益</span><b id="out-benefit">124.0</b><small>萬</small></div>
             <div><span>回本</span><b id="out-payback">17.2</b><small>個月</small></div>
