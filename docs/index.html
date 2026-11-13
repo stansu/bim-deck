@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>以小團隊取代大團隊｜最高機密 BIM 導入決策</title>
+<meta name="description" content="最高機密的 BIM 導入決策：5 頁看完工具路線、投資效益與 18 個月計畫。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1B3A4B">
+<meta property="og:title" content="以小團隊取代大團隊｜最高機密 BIM 導入決策">
+<meta property="og:site_name" content="最高機密">
+<meta property="og:description" content="第一年 49.8 萬、第二年效益 124 萬、17 個月回本。5 頁看完。">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<nav class="dots" aria-label="頁面導覽">
+  <button type="button" data-go="p1" aria-label="第 1 頁：封面"><span></span></button>
+  <button type="button" data-go="p2" aria-label="第 2 頁：問題與目標"><span></span></button>
+  <button type="button" data-go="p3" aria-label="第 3 頁：做法"><span></span></button>
+  <button type="button" data-go="p4" aria-label="第 4 頁：成本與效益"><span></span></button>
+  <button type="button" data-go="p5" aria-label="第 5 頁：決策"><span></span></button>
+</nav>
+
+<main id="deck">
+
+  <!-- ================= 1 ================= -->
+  <section class="page page--cover" id="p1" aria-label="封面">
+    <div class="page__inner">
+      <div class="brand">
+        <img class="brand__mark" src="assets/logo.png" alt="最高機密" width="72" height="52">
+        <span class="brand__rule" aria-hidden="true"></span>
+        <span class="brand__txt">
+          <span class="brand__name">最高機密</span>
+          <span class="brand__sub">BIM 導入評估</span>
+        </span>
+      </div>
+
+      <p class="kicker">內部決策簡報 ／ 2026.11 ／ v2.0</p>
+      <h1 class="display">以小團隊<br>取代大團隊</h1>
+      <p class="lede">室內設計公司的 BIM 導入決策：工具路線、投資效益、18 個月計畫。<br class="only-wide">五頁看完，最後一頁是請你裁決的四件事。</p>
+
+      <dl class="stats">
+        <div><dt>第一年投資</dt><dd>49.8<small>萬</small></dd></div>
+        <div><dt>第二年效益</dt><dd>124<small>萬</small></dd></div>
+        <div><dt>回本</dt><dd>17<small>個月</small></dd></div>
+      </dl>
+
+      <p class="hint"><span class="hint__key">↓</span> 向下滑動，或按 → 繼續</p>
+    </div>
+  </section>
+
+  <!-- ================= 2 ================= -->
+  <section class="page" id="p2" aria-label="問題與目標">
+    <div class="page__inner">
+      <p class="kicker">01 ／ 問題與目標</p>
+      <h2>產能是靠人數堆出來的<br><span class="muted">四個漏，正在吃掉毛利</span></h2>
+
+      <div class="switch" role="group" aria-label="切換現況與目標">
+        <button type="button" aria-pressed="true" data-state="now">現在</button>
+        <button type="button" aria-pressed="false" data-state="goal">12 個月後</button>
+      </div>
+
+      <div class="cards" id="panel-cards" aria-live="polite">
+        <article class="card">
+          <h3><span class="card__num">01</span><span class="card__title" data-now="繪圖人力線性成長" data-goal="同樣人力，多接 2–4 案">繪圖人力線性成長</span></h3>
+          <p data-now="案量增加 20%，人力就得增加 20%。成長的天花板是你的招募能力。" data-goal="把重複勞動交給模型，產能不再跟人數綁在一起。">案量增加 20%，人力就得增加 20%。成長的天花板是你的招募能力。</p>
+        </article>
+        <article class="card">
+          <h3><span class="card__num">02</span><span class="card__title" data-now="兩套 3D、兩套真相" data-goal="一個模型，四種輸出">兩套 3D、兩套真相</span></h3>
+          <p data-now="Blender 與 SketchUp 各做一份，版本對不上，改圖要改兩次。" data-goal="施工圖、3D、數量、變更紀錄都從同一份模型長出來。">Blender 與 SketchUp 各做一份，版本對不上，改圖要改兩次。</p>
+        </article>
+        <article class="card">
+          <h3><span class="card__num">03</span><span class="card__title" data-now="數量靠人工點" data-goal="匯出即數量，誤差 ≤ 5%">數量靠人工點</span></h3>
+          <p data-now="材料與工種太多，漏項要等決算才知道，毛利被吃掉還找不到原因。" data-goal="從 IFC 匯出數量、套工種規則、人工覆核，再進估價。">材料與工種太多，漏項要等決算才知道，毛利被吃掉還找不到原因。</p>
+        </article>
+        <article class="card">
+          <h3><span class="card__num">04</span><span class="card__title" data-now="3D 與施工圖各做一次" data-goal="建一次，出圖與視覺共用">3D 與施工圖各做一次</span></h3>
+          <p data-now="同一件事做兩遍；設計一改，兩邊都要重來。" data-goal="改模型，平面、立面、數量同步更新，只改一次。">同一件事做兩遍；設計一改，兩邊都要重來。</p>
+        </article>
+      </div>
+
+      <div class="kpis">
+        <div><span class="kpi__label">施工圖工時／案</span><span class="kpi__val">300 → 220<em>hr</em></span></div>
+        <div><span class="kpi__label">現場變更</span><span class="kpi__val">2–4 → ≤1<em>次</em></span></div>
+        <div><span class="kpi__label">數量漏項率</span><span class="kpi__val">5–10% → ≤3<em>%</em></span></div>
+        <div><span class="kpi__label">可同時承接</span><span class="kpi__val">3–4 → 5–6<em>案</em></span></div>
+      </div>
+      <p class="foot-note">只有第一項是你能控制的；後三項才是老闆在意的。工時降了但變更與漏項沒動，那只是「畫得快」。</p>
+    </div>
+  </section>
+
+  <!-- ================= 3 ================= -->
+  <section class="page" id="p3" aria-label="做法">
+    <div class="page__inner">
+      <p class="kicker">02 ／ 做法</p>
+      <h2>一套模型，三件事<br><span class="muted">產出、工具、時程</span></h2>
+
+      <div class="tabs" role="tablist" aria-label="做法分頁">
+        <button type="button" role="tab" id="t-out" aria-selected="true" aria-controls="tab-out-panel">產出</button>
+        <button type="button" role="tab" id="t-tool" aria-selected="false" aria-controls="tab-tool-panel" tabindex="-1">工具</button>
+        <button type="button" role="tab" id="t-plan" aria-selected="false" aria-controls="tab-plan-panel" tabindex="-1">時程</button>
+      </div>
+
+      <div class="tab-panel" id="tab-out-panel" role="tabpanel" aria-labelledby="t-out">
+        <div class="flow">
+          <div class="flow__source">
+            <strong>建一次模型</strong>
+            <span>樓層、元件、材料、工種、尺寸</span>
+          </div>
+          <ul class="flow__out">
+            <li><b>施工圖</b><span>平面／天花／立面／剖面／大樣</span></li>
+            <li><b>3D 視覺</b><span>同一模型直接渲染，不重做</span></li>
+            <li><b>材料數量</b><span>Qto 匯出，工種彙總</span></li>
+            <li><b>變更紀錄</b><span>改模型，圖與數量同步</span></li>
+          </ul>
+        </div>
+        <p class="foot-note">價值不在「會做 3D」，而在「同一份資料被重複使用四次」。這就是小團隊能取代大團隊的技術本質。</p>
+      </div>
+
+      <div class="tab-panel" id="tab-tool-panel" role="tabpanel" aria-labelledby="t-tool" hidden>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>角色</th><th>工具</th><th>負責什麼</th><th>不要做什麼</th></tr></thead>
+            <tbody>
+              <tr><td data-label="角色">核心模型</td><td data-label="工具">Bonsai（Blender 外掛）</td><td data-label="負責">樓層、分類、屬性、材料、工種</td><td data-label="不要做">拿來做圖框排版</td></tr>
+              <tr><td data-label="角色">出圖加速（1 席）</td><td data-label="工具">BricsCAD BIM 或 Archicad</td><td data-label="負責">圖框、標註、明細表、列印</td><td data-label="不要做">另建一套可獨立修改的模型</td></tr>
+              <tr><td data-label="角色">交換與檢核</td><td data-label="工具">IFC ＋ Solibri／Bonsai IDS</td><td data-label="負責">對外交付、衝突檢核、規則檢查</td><td data-label="不要做">把 IFC 當每天編輯的檔</td></tr>
+              <tr><td data-label="角色">數量與估價</td><td data-label="工具">IfcOpenShell ＋ Excel</td><td data-label="負責">Qto 匯出、工種彙總、損耗</td><td data-label="不要做">跳過人工覆核</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="callout"><b>鐵則</b>正式施工模型只有一個。其他工具只能是前期設計、視覺、或補充；兩套並行＝兩倍重工。</p>
+      </div>
+
+      <div class="tab-panel" id="tab-plan-panel" role="tabpanel" aria-labelledby="t-plan" hidden>
+        <ol class="timeline">
+          <li><span class="tl__when">M0–1</span><b>S0 基礎</b><span>標準、選案、裝機</span><em>門檻：試點範圍簽核</em></li>
+          <li><span class="tl__when">M2–4</span><b>S1 試點</b><span>一案走完建模→出圖→IFC</span><em>門檻：出圖可用率 ≥ 80%</em></li>
+          <li><span class="tl__when">M5–8</span><b>S2 資產化</b><span>元件庫、樣板、腳本</span><em>門檻：第二案工時 −30%</em></li>
+          <li><span class="tl__when">M9–12</span><b>S3 全面</b><span>新案皆用 BIM 出圖</span><em>門檻：4 個 KPI 達標</em></li>
+          <li><span class="tl__when">M13–18</span><b>S4 交付</b><span>IFC 協作、竣工模型</span><em>門檻：2 個外部單位收 IFC</em></li>
+        </ol>
+        <p class="foot-note">沒過門檻就不進下一階段。這不是流程圖，是停損機制。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4 ================= -->
+  <section class="page" id="p4" aria-label="成本與效益">
+    <div class="page__inner">
+      <p class="kicker">03 ／ 成本與效益</p>
+      <h2>第一年 49.8 萬<br><span class="muted">現金只要 22–31 萬</span></h2>
+
+      <div class="money">
+        <div class="money__cost">
+          <h3>第一年成本</h3>
+          <ul class="bill">
+            <li><span>BricsCAD BIM 1 席（永久）</span><b>70,000</b></li>
+            <li><span>Archicad 1 席（試用後決定）</span><b>0–90,000</b></li>
+            <li><span>硬體升級 2 席</span><b>100,000</b></li>
+            <li><span>課程與顧問</span><b>20,000</b></li>
+            <li><span>腳本外包</span><b>30,000</b></li>
+            <li class="bill--soft"><span>訓練 180 小時（機會成本）</span><b>144,000</b></li>
+            <li class="bill--soft"><span>試點期減產（機會成本）</span><b>134,000</b></li>
+          </ul>
+          <p class="bill__sum"><span>合計</span><b>49.8 萬<small>含機會成本</small></b></p>
+        </div>
+
+        <div class="money__calc">
+          <h3>自己拉一次</h3>
+          <label class="slider">
+            <span>年案量 <b id="v-cases">10</b> 件</span>
+            <input type="range" id="cases" min="6" max="16" step="1" value="10">
+          </label>
+          <label class="slider">
+            <span>工時降幅 <b id="v-cut">25</b> %</span>
+            <input type="range" id="cut" min="10" max="40" step="5" value="25">
+          </label>
+          <div class="calc-out">
+            <div><span>年效益</span><b id="out-benefit">124.0</b><small>萬</small></div>
+            <div><span>回本</span><b id="out-payback">17.2</b><small>個月</small></div>
+          </div>
+          <p class="calc-note" id="calc-note">工時節省 105 小時／案、重工與增接案依案量等比計算。</p>
+        </div>
+      </div>
+
+      <div class="scenarios">
+        <div><span>保守</span><b>59.4 萬</b><em>24 個月</em></div>
+        <div class="is-base"><span>基準</span><b>124.0 萬</b><em>17 個月</em></div>
+        <div><span>樂觀</span><b>191.6 萬</b><em>15 個月</em></div>
+      </div>
+      <p class="foot-note">前提：省下的工時要拿去接案，或不補人。只是讓大家早點下班，帳上不會出現這筆錢。</p>
+    </div>
+  </section>
+
+  <!-- ================= 5 ================= -->
+  <section class="page page--decide" id="p5" aria-label="決策">
+    <div class="page__inner">
+      <p class="kicker">04 ／ 請裁決</p>
+      <h2>今天可以決定的四件事</h2>
+
+      <ul class="decisions" id="decisions">
+        <li><label><input type="checkbox" checked><span><b>核准 90 天試點</b>選一案（80–150 坪、變更中等），走完建模到 IFC 交付。</span></label></li>
+        <li><label><input type="checkbox" checked><span><b>核定預算上限</b>現金 22 萬；若加購 Archicad 至 31 萬，分階段釋出。</span></label></li>
+        <li><label><input type="checkbox"><span><b>設定停損點</b>試點工時未降 15%，或出圖可用率低於 80%，即暫停。</span></label></li>
+        <li><label><input type="checkbox"><span><b>排定第 13 週複審</b>用四個 KPI 與三個問題，決定是否加碼到全公司。</span></label></li>
+      </ul>
+
+      <div class="pits">
+        <div class="pit"><h3>坑一：兩套圖並行</h3><p>只要允許「先用 CAD 頂一下」，BIM 就會永遠停在頂一下。<span>對策：驗收通過後才設 CAD 截止日，之前保留比對、不維護第二套。</span></p></div>
+        <div class="pit"><h3>坑二：業主只寫「要 BIM」</h3><p>沒寫格式、精度、驗收，解釋權就不在你手上。<span>對策：附一頁交付說明——IFC4、LOD 300、不含機電、不給原生檔、驗收三項可測。</span></p></div>
+      </div>
+
+      <div class="final">
+        <p class="final__line">我們不是要買一套軟體，<br>是要把「畫圖」變成「生產」。</p>
+        <button type="button" class="btn" id="copy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9h10v10H9z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 15V5h10" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>複製決策摘要</button>
+        <p class="toast" id="toast" role="status" aria-live="polite"></p>
+      </div>
+
+      <footer class="site-foot">
+        <span class="foot-brand"><img src="assets/logo.png" alt="" width="30" height="22">最高機密　·　v2.0 ／ 2026.11</span>
+        <span>完整版：BIM 導入計畫 24 頁、試算模型 Excel</span>
+        <span>數字為區間估計，非報價</span>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<div class="pager" aria-hidden="true"><span id="pager-now">1</span> / 5</div>
+
+<script src="app.js"></script>
+</body>
+</html>
