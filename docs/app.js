@@ -153,6 +153,14 @@
     if (focus && tabs[index]) tabs[index].focus();
   }
 
+  // 分頁深連結：?p=3&t=tool
+  (function tabDeepLink() {
+    var m = /[?&]t=(out|tool|plan)/.exec(location.search);
+    if (!m) return;
+    var btn = document.getElementById("t-" + m[1]);
+    if (btn) btn.click();
+  })();
+
   /* ---------- 效益試算 ---------- */
 
   var COST_Y1 = 498400;      // 第一年總成本（含機會成本）
